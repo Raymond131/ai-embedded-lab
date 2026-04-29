@@ -1,0 +1,46 @@
+{
+  "items": [
+    {
+      "artifacts": {
+        "uart_observe_json": "/home/raymond/ael/runs/2026-04-29_10-43-13_esp32_wroom32d_cp210x_blinky_1hz/uart_observe.json",
+        "uart_raw_log": "/home/raymond/ael/runs/2026-04-29_10-43-13_esp32_wroom32d_cp210x_blinky_1hz/observe_uart.log"
+      },
+      "facts": {
+        "baud": 115200,
+        "bytes": 4082,
+        "crash_detected": false,
+        "download_mode_detected": false,
+        "error_summary": "uart observe failed",
+        "failure_class": "",
+        "failure_kind": "",
+        "firmware_ready_seen": true,
+        "forbid_matched": [],
+        "lines": 79,
+        "matched_boot": {
+          "count": 3,
+          "patterns": [
+            "rst:0x",
+            "ESP-ROM:",
+            "ESP-IDF v",
+            "boot:0x"
+          ]
+        },
+        "matched_expect": {
+          "AEL_BLINKY_DONE": 1
+        },
+        "missing_expect": [],
+        "missing_expected_patterns": [],
+        "ok": true,
+        "port": "/dev/ttyUSB0",
+        "reboot_loop_suspected": true,
+        "recovery_hint": {},
+        "verify_substage": "uart.verify"
+      },
+      "kind": "uart.verify",
+      "source": "check.uart_log",
+      "status": "pass",
+      "summary": "uart capture validated"
+    }
+  ],
+  "version": "evidence/0.1"
+}

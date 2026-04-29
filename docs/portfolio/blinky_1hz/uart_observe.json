@@ -1,0 +1,33 @@
+{
+  "baud": 115200,
+  "bytes": 4082,
+  "crash_detected": false,
+  "download_mode_detected": false,
+  "error_summary": "",
+  "errors": [],
+  "errors_truncated": 0,
+  "forbid_matched": [],
+  "lines": 79,
+  "matched": {
+    "boot": {
+      "count": 3,
+      "patterns": [
+        "rst:0x",
+        "ESP-ROM:",
+        "ESP-IDF v",
+        "boot:0x"
+      ]
+    },
+    "expect": {
+      "AEL_BLINKY_DONE": 1
+    },
+    "forbid": {}
+  },
+  "missing_expect": [],
+  "ok": true,
+  "port": "/dev/ttyUSB0",
+  "raw_log_path": "/home/raymond/ael/runs/2026-04-29_10-43-13_esp32_wroom32d_cp210x_blinky_1hz/observe_uart.log",
+  "reboot_loop_suspected": true,
+  "warnings": [],
+  "warnings_truncated": 0
+}

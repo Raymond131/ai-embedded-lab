@@ -1,0 +1,26 @@
+{
+  "board_path": "/home/raymond/ael/configs/boards/esp32_wroom32d_cp210x.yaml",
+  "ended_at": "2026-04-29T10:44:30.899968",
+  "firmware": {
+    "path": "/home/raymond/ael/artifacts/build_esp32_wroom32d_blinky_1hz/ael_esp32_wroom32d_blinky_1hz.elf",
+    "sha256": "5188760757cfd946c94d37d31f814ca150f6d762847c15150669494e56e002d2"
+  },
+  "git_commit": "",
+  "git_dirty": false,
+  "git_status": "",
+  "probe_path": null,
+  "run_id": "2026-04-29_10-43-13_esp32_wroom32d_cp210x_blinky_1hz",
+  "run_plan": "/home/raymond/ael/runs/2026-04-29_10-43-13_esp32_wroom32d_cp210x_blinky_1hz/artifacts/run_plan.json",
+  "runner_result": "/home/raymond/ael/runs/2026-04-29_10-43-13_esp32_wroom32d_cp210x_blinky_1hz/artifacts/result.json",
+  "started_at": "2026-04-29T10:43:13.982698",
+  "termination": "pass",
+  "test_path": "/home/raymond/ael/tests/plans/esp32_wroom32d/blinky_1hz.json",
+  "timeout_s": null,
+  "timings": {
+    "build_attempts": 1,
+    "check_signal_attempts": 1,
+    "check_uart_attempts": 1,
+    "load_attempts": 1,
+    "total_s": 80.333
+  }
+}

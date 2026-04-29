@@ -1,0 +1,583 @@
+{
+  "artifacts": [
+    "/home/raymond/ael/runs/2026-04-29_10-43-13_esp32_wroom32d_cp210x_blinky_1hz/artifacts/ael_esp32_wroom32d_blinky_1hz.elf",
+    "/home/raymond/ael/runs/2026-04-29_10-43-13_esp32_wroom32d_cp210x_blinky_1hz/artifacts/ael_esp32_wroom32d_blinky_1hz.bin"
+  ],
+  "current_setup": {
+    "compatibility": {
+      "probe_capability_surfaces": {},
+      "probe_communication": {},
+      "probe_endpoint": {
+        "host": null,
+        "port": null
+      },
+      "probe_instance": null,
+      "probe_type": null
+    },
+    "connection_digest": [
+      "wiring: swd=NC, reset=NC, verify=NC"
+    ],
+    "connection_setup": {
+      "bench_connections": [],
+      "bench_setup": {},
+      "default_wiring": {
+        "reset": "NC",
+        "swd": "NC",
+        "verify": "NC"
+      },
+      "observe_map": {},
+      "resolved_wiring": {
+        "reset": "NC",
+        "swd": "NC",
+        "verify": "NC"
+      },
+      "setup_readiness": {
+        "blocking_issues": [],
+        "components": [],
+        "overall": "not_applicable",
+        "ready_to_run": true,
+        "warnings": []
+      },
+      "source_summary": {
+        "bench_connections": null,
+        "bench_setup": null,
+        "default_wiring": "board.default_wiring",
+        "wiring_override": null
+      },
+      "validation_errors": [],
+      "verification_views": {},
+      "warnings": [],
+      "wiring_assumptions": []
+    },
+    "control_instrument": {
+      "capability_surfaces": {},
+      "communication": {},
+      "endpoint": {
+        "host": null,
+        "port": null
+      },
+      "instance": null,
+      "type": null
+    },
+    "control_instrument_capability_surfaces": {},
+    "control_instrument_communication": {},
+    "control_instrument_endpoint": {
+      "host": null,
+      "port": null
+    },
+    "control_instrument_instance": null,
+    "control_instrument_type": null,
+    "controller": {
+      "capability_surfaces": {},
+      "communication": {},
+      "endpoint": {
+        "host": null,
+        "port": null
+      },
+      "instance": null,
+      "type": null
+    },
+    "controller_capability_surfaces": {},
+    "controller_communication": {},
+    "controller_endpoint": {
+      "host": null,
+      "port": null
+    },
+    "controller_instance": null,
+    "controller_type": null,
+    "instrument_capability_surfaces": {},
+    "instrument_communication": {},
+    "instrument_profile": null,
+    "selected_bench_resources": {
+      "connection_digest": [
+        "wiring: swd=NC, reset=NC, verify=NC"
+      ],
+      "connection_setup": {
+        "bench_connections": [],
+        "bench_setup": {},
+        "default_wiring": {
+          "reset": "NC",
+          "swd": "NC",
+          "verify": "NC"
+        },
+        "observe_map": {},
+        "resolved_wiring": {
+          "reset": "NC",
+          "swd": "NC",
+          "verify": "NC"
+        },
+        "setup_readiness": {
+          "blocking_issues": [],
+          "components": [],
+          "overall": "not_applicable",
+          "ready_to_run": true,
+          "warnings": []
+        },
+        "source_summary": {
+          "bench_connections": null,
+          "bench_setup": null,
+          "default_wiring": "board.default_wiring",
+          "wiring_override": null
+        },
+        "validation_errors": [],
+        "verification_views": {},
+        "warnings": [],
+        "wiring_assumptions": []
+      },
+      "contract_version": 1,
+      "control_instrument": {
+        "capability_surfaces": {},
+        "communication": {},
+        "endpoint": {
+          "host": null,
+          "port": null
+        },
+        "instance": null,
+        "type": null
+      },
+      "controller": {
+        "capability_surfaces": {},
+        "communication": {},
+        "endpoint": {
+          "host": null,
+          "port": null
+        },
+        "instance": null,
+        "type": null
+      },
+      "instrument": null,
+      "resource_keys": [
+        "serial:/dev/ttyUSB0"
+      ],
+      "resource_summary": {
+        "control_instrument_configs": [],
+        "control_instrument_endpoints": [],
+        "controller_configs": [],
+        "controller_endpoints": [],
+        "dut_ids": [],
+        "instrument_endpoints": [],
+        "other": [],
+        "serial_ports": [
+          "/dev/ttyUSB0"
+        ]
+      },
+      "selected_ap_ssid": null,
+      "selection_digest": [
+        "serial:/dev/ttyUSB0"
+      ],
+      "serial_port": "/dev/ttyUSB0"
+    },
+    "selected_board_profile": {
+      "config": "configs/boards/esp32_wroom32d_cp210x.yaml",
+      "id": "esp32_wroom32d_cp210x",
+      "name": "ESP32-WROOM-32D CP210X",
+      "role": "runtime_policy",
+      "target": "esp32"
+    },
+    "selected_dut": {
+      "id": "esp32_wroom32d_cp210x",
+      "name": "ESP32-WROOM-32D CP210X",
+      "runtime_binding": "board_profile_driven",
+      "target": "esp32"
+    },
+    "selected_endpoint": {
+      "host": null,
+      "port": null
+    },
+    "serial_or_flash_port": "/dev/ttyUSB0"
+  },
+  "ended_at": "2026-04-29T10:44:30.899968",
+  "error_summary": "",
+  "evidence": {
+    "count": 1,
+    "status_counts": {
+      "fail": 0,
+      "info": 0,
+      "pass": 1
+    },
+    "version": "evidence/0.1"
+  },
+  "failed_step": "",
+  "json": {
+    "config_effective": "/home/raymond/ael/runs/2026-04-29_10-43-13_esp32_wroom32d_cp210x_blinky_1hz/config_effective.json",
+    "evidence": "/home/raymond/ael/runs/2026-04-29_10-43-13_esp32_wroom32d_cp210x_blinky_1hz/artifacts/evidence.json",
+    "flash": "/home/raymond/ael/runs/2026-04-29_10-43-13_esp32_wroom32d_cp210x_blinky_1hz/flash.json",
+    "instrument_digital": "/home/raymond/ael/runs/2026-04-29_10-43-13_esp32_wroom32d_cp210x_blinky_1hz/artifacts/instrument_digital.json",
+    "instrument_selftest": "/home/raymond/ael/runs/2026-04-29_10-43-13_esp32_wroom32d_cp210x_blinky_1hz/artifacts/instrument_selftest.json",
+    "measure": "/home/raymond/ael/runs/2026-04-29_10-43-13_esp32_wroom32d_cp210x_blinky_1hz/measure.json",
+    "meta": "/home/raymond/ael/runs/2026-04-29_10-43-13_esp32_wroom32d_cp210x_blinky_1hz/meta.json",
+    "preflight": "/home/raymond/ael/runs/2026-04-29_10-43-13_esp32_wroom32d_cp210x_blinky_1hz/preflight.json",
+    "run_plan": "/home/raymond/ael/runs/2026-04-29_10-43-13_esp32_wroom32d_cp210x_blinky_1hz/artifacts/run_plan.json",
+    "runner_result": "/home/raymond/ael/runs/2026-04-29_10-43-13_esp32_wroom32d_cp210x_blinky_1hz/artifacts/result.json",
+    "uart_observe": "/home/raymond/ael/runs/2026-04-29_10-43-13_esp32_wroom32d_cp210x_blinky_1hz/uart_observe.json",
+    "verify_result": "/home/raymond/ael/runs/2026-04-29_10-43-13_esp32_wroom32d_cp210x_blinky_1hz/artifacts/verify_result.json"
+  },
+  "last_known_good_setup": {
+    "artifact_or_evidence_location": "/home/raymond/ael/runs/2026-04-29_10-43-13_esp32_wroom32d_cp210x_blinky_1hz/artifacts/evidence.json",
+    "compatibility": {
+      "board": "ESP32-WROOM-32D CP210X",
+      "probe_capability_surfaces": {},
+      "probe_communication": {},
+      "probe_endpoint": null,
+      "probe_instance": null,
+      "probe_type": null
+    },
+    "connection_digest": [
+      "wiring: swd=NC, reset=NC, verify=NC"
+    ],
+    "connection_setup": {
+      "bench_connections": [],
+      "bench_setup": {},
+      "default_wiring": {
+        "reset": "NC",
+        "swd": "NC",
+        "verify": "NC"
+      },
+      "observe_map": {},
+      "resolved_wiring": {
+        "reset": "NC",
+        "swd": "NC",
+        "verify": "NC"
+      },
+      "setup_readiness": {
+        "blocking_issues": [],
+        "components": [],
+        "overall": "not_applicable",
+        "ready_to_run": true,
+        "warnings": []
+      },
+      "source_summary": {
+        "bench_connections": null,
+        "bench_setup": null,
+        "default_wiring": "board.default_wiring",
+        "wiring_override": null
+      },
+      "validation_errors": [],
+      "verification_views": {},
+      "warnings": [],
+      "wiring_assumptions": []
+    },
+    "control_instrument": null,
+    "control_instrument_capability_surfaces": {},
+    "control_instrument_communication": {},
+    "control_instrument_endpoint": null,
+    "control_instrument_instance": null,
+    "control_instrument_type": null,
+    "controller": null,
+    "controller_capability_surfaces": {},
+    "controller_communication": {},
+    "controller_endpoint": null,
+    "controller_instance": null,
+    "controller_type": null,
+    "endpoint": null,
+    "instrument_capability_surfaces": {},
+    "instrument_communication": {},
+    "instrument_profile": null,
+    "port": "/dev/ttyUSB0",
+    "run_id": "2026-04-29_10-43-13_esp32_wroom32d_cp210x_blinky_1hz",
+    "selected_bench_resources": {
+      "connection_digest": [
+        "wiring: swd=NC, reset=NC, verify=NC"
+      ],
+      "connection_setup": {
+        "bench_connections": [],
+        "bench_setup": {},
+        "default_wiring": {
+          "reset": "NC",
+          "swd": "NC",
+          "verify": "NC"
+        },
+        "observe_map": {},
+        "resolved_wiring": {
+          "reset": "NC",
+          "swd": "NC",
+          "verify": "NC"
+        },
+        "setup_readiness": {
+          "blocking_issues": [],
+          "components": [],
+          "overall": "not_applicable",
+          "ready_to_run": true,
+          "warnings": []
+        },
+        "source_summary": {
+          "bench_connections": null,
+          "bench_setup": null,
+          "default_wiring": "board.default_wiring",
+          "wiring_override": null
+        },
+        "validation_errors": [],
+        "verification_views": {},
+        "warnings": [],
+        "wiring_assumptions": []
+      },
+      "contract_version": 1,
+      "control_instrument": {
+        "capability_surfaces": {},
+        "communication": {},
+        "endpoint": {
+          "host": null,
+          "port": null
+        },
+        "instance": null,
+        "type": null
+      },
+      "controller": {
+        "capability_surfaces": {},
+        "communication": {},
+        "endpoint": {
+          "host": null,
+          "port": null
+        },
+        "instance": null,
+        "type": null
+      },
+      "instrument": null,
+      "resource_keys": [
+        "serial:/dev/ttyUSB0"
+      ],
+      "resource_summary": {
+        "control_instrument_configs": [],
+        "control_instrument_endpoints": [],
+        "controller_configs": [],
+        "controller_endpoints": [],
+        "dut_ids": [],
+        "instrument_endpoints": [],
+        "other": [],
+        "serial_ports": [
+          "/dev/ttyUSB0"
+        ]
+      },
+      "selected_ap_ssid": null,
+      "selection_digest": [
+        "serial:/dev/ttyUSB0"
+      ],
+      "serial_port": "/dev/ttyUSB0"
+    },
+    "selected_board_profile": {
+      "config": "configs/boards/esp32_wroom32d_cp210x.yaml",
+      "id": "esp32_wroom32d_cp210x",
+      "name": "ESP32-WROOM-32D CP210X",
+      "role": "runtime_policy",
+      "target": "esp32"
+    },
+    "selected_dut": {
+      "id": "esp32_wroom32d_cp210x",
+      "name": "ESP32-WROOM-32D CP210X",
+      "runtime_binding": "board_profile_driven",
+      "target": "esp32"
+    },
+    "test": "blinky_1hz"
+  },
+  "logs": {
+    "build": "/home/raymond/ael/runs/2026-04-29_10-43-13_esp32_wroom32d_cp210x_blinky_1hz/build.log",
+    "flash": "/home/raymond/ael/runs/2026-04-29_10-43-13_esp32_wroom32d_cp210x_blinky_1hz/flash.log",
+    "observe": "/home/raymond/ael/runs/2026-04-29_10-43-13_esp32_wroom32d_cp210x_blinky_1hz/observe.log",
+    "observe_uart": "/home/raymond/ael/runs/2026-04-29_10-43-13_esp32_wroom32d_cp210x_blinky_1hz/observe_uart_step.log",
+    "observe_uart_raw": "/home/raymond/ael/runs/2026-04-29_10-43-13_esp32_wroom32d_cp210x_blinky_1hz/observe_uart.log",
+    "preflight": "/home/raymond/ael/runs/2026-04-29_10-43-13_esp32_wroom32d_cp210x_blinky_1hz/preflight.log",
+    "verify": "/home/raymond/ael/runs/2026-04-29_10-43-13_esp32_wroom32d_cp210x_blinky_1hz/verify.log"
+  },
+  "ok": true,
+  "retry_summary": {
+    "recovery_attempts": 0,
+    "step_attempts": 4
+  },
+  "run_id": "2026-04-29_10-43-13_esp32_wroom32d_cp210x_blinky_1hz",
+  "stage_execution": {
+    "deferred": [],
+    "executed": [
+      "plan",
+      "run",
+      "check",
+      "report"
+    ],
+    "requested_until": "report",
+    "skipped": [
+      "pre-flight"
+    ]
+  },
+  "started_at": "2026-04-29T10:43:13.982698",
+  "success": true,
+  "termination": "pass",
+  "timeout_s": null,
+  "validation_summary": {
+    "cleanup_items": [
+      "pre-flight skipped by configuration"
+    ],
+    "compatibility": {
+      "board": "ESP32-WROOM-32D CP210X",
+      "probe_capability_surfaces": {},
+      "probe_communication": {},
+      "probe_endpoint": null,
+      "probe_instance": null,
+      "probe_type": null
+    },
+    "connection_digest": [
+      "wiring: swd=NC, reset=NC, verify=NC"
+    ],
+    "connection_setup": {
+      "bench_connections": [],
+      "bench_setup": {},
+      "default_wiring": {
+        "reset": "NC",
+        "swd": "NC",
+        "verify": "NC"
+      },
+      "observe_map": {},
+      "resolved_wiring": {
+        "reset": "NC",
+        "swd": "NC",
+        "verify": "NC"
+      },
+      "setup_readiness": {
+        "blocking_issues": [],
+        "components": [],
+        "overall": "not_applicable",
+        "ready_to_run": true,
+        "warnings": []
+      },
+      "source_summary": {
+        "bench_connections": null,
+        "bench_setup": null,
+        "default_wiring": "board.default_wiring",
+        "wiring_override": null
+      },
+      "validation_errors": [],
+      "verification_views": {},
+      "warnings": [],
+      "wiring_assumptions": []
+    },
+    "control_instrument": null,
+    "control_instrument_capability_surfaces": {},
+    "control_instrument_communication": {},
+    "control_instrument_endpoint": null,
+    "control_instrument_instance": null,
+    "control_instrument_type": null,
+    "controller": null,
+    "controller_capability_surfaces": {},
+    "controller_communication": {},
+    "controller_endpoint": null,
+    "controller_instance": null,
+    "controller_type": null,
+    "endpoint": null,
+    "executed_stages": [
+      "plan",
+      "run",
+      "check",
+      "report"
+    ],
+    "instrument_capability_surfaces": {},
+    "instrument_communication": {},
+    "instrument_profile": null,
+    "key_artifact_paths": {
+      "result": "/home/raymond/ael/runs/2026-04-29_10-43-13_esp32_wroom32d_cp210x_blinky_1hz/result.json",
+      "run_plan": "/home/raymond/ael/runs/2026-04-29_10-43-13_esp32_wroom32d_cp210x_blinky_1hz/artifacts/run_plan.json",
+      "runner_result": "/home/raymond/ael/runs/2026-04-29_10-43-13_esp32_wroom32d_cp210x_blinky_1hz/artifacts/result.json"
+    },
+    "key_checks_passed": [
+      "uart.verify"
+    ],
+    "key_evidence_paths": {
+      "evidence": "/home/raymond/ael/runs/2026-04-29_10-43-13_esp32_wroom32d_cp210x_blinky_1hz/artifacts/evidence.json",
+      "uart_observe": "/home/raymond/ael/runs/2026-04-29_10-43-13_esp32_wroom32d_cp210x_blinky_1hz/uart_observe.json",
+      "verify_result": "/home/raymond/ael/runs/2026-04-29_10-43-13_esp32_wroom32d_cp210x_blinky_1hz/artifacts/verify_result.json"
+    },
+    "overall_result": "pass",
+    "run_id": "2026-04-29_10-43-13_esp32_wroom32d_cp210x_blinky_1hz",
+    "selected_bench_resources": {
+      "connection_digest": [
+        "wiring: swd=NC, reset=NC, verify=NC"
+      ],
+      "connection_setup": {
+        "bench_connections": [],
+        "bench_setup": {},
+        "default_wiring": {
+          "reset": "NC",
+          "swd": "NC",
+          "verify": "NC"
+        },
+        "observe_map": {},
+        "resolved_wiring": {
+          "reset": "NC",
+          "swd": "NC",
+          "verify": "NC"
+        },
+        "setup_readiness": {
+          "blocking_issues": [],
+          "components": [],
+          "overall": "not_applicable",
+          "ready_to_run": true,
+          "warnings": []
+        },
+        "source_summary": {
+          "bench_connections": null,
+          "bench_setup": null,
+          "default_wiring": "board.default_wiring",
+          "wiring_override": null
+        },
+        "validation_errors": [],
+        "verification_views": {},
+        "warnings": [],
+        "wiring_assumptions": []
+      },
+      "contract_version": 1,
+      "control_instrument": {
+        "capability_surfaces": {},
+        "communication": {},
+        "endpoint": {
+          "host": null,
+          "port": null
+        },
+        "instance": null,
+        "type": null
+      },
+      "controller": {
+        "capability_surfaces": {},
+        "communication": {},
+        "endpoint": {
+          "host": null,
+          "port": null
+        },
+        "instance": null,
+        "type": null
+      },
+      "instrument": null,
+      "resource_keys": [
+        "serial:/dev/ttyUSB0"
+      ],
+      "resource_summary": {
+        "control_instrument_configs": [],
+        "control_instrument_endpoints": [],
+        "controller_configs": [],
+        "controller_endpoints": [],
+        "dut_ids": [],
+        "instrument_endpoints": [],
+        "other": [],
+        "serial_ports": [
+          "/dev/ttyUSB0"
+        ]
+      },
+      "selected_ap_ssid": null,
+      "selection_digest": [
+        "serial:/dev/ttyUSB0"
+      ],
+      "serial_port": "/dev/ttyUSB0"
+    },
+    "selected_board_profile": {
+      "config": "configs/boards/esp32_wroom32d_cp210x.yaml",
+      "id": "esp32_wroom32d_cp210x",
+      "name": "ESP32-WROOM-32D CP210X",
+      "role": "runtime_policy",
+      "target": "esp32"
+    },
+    "selected_dut": {
+      "id": "esp32_wroom32d_cp210x",
+      "name": "ESP32-WROOM-32D CP210X",
+      "runtime_binding": "board_profile_driven",
+      "target": "esp32"
+    },
+    "serial_or_flash_port": "/dev/ttyUSB0",
+    "test": "blinky_1hz"
+  }
+}

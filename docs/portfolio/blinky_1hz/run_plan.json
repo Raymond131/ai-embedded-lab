@@ -1,0 +1,219 @@
+{
+  "context": {
+    "artifact_root": "/home/raymond/ael/runs/2026-04-29_10-43-13_esp32_wroom32d_cp210x_blinky_1hz/artifacts",
+    "log_root": "/home/raymond/ael/runs/2026-04-29_10-43-13_esp32_wroom32d_cp210x_blinky_1hz",
+    "run_root": "/home/raymond/ael/runs",
+    "workspace_dir": "/home/raymond/ael"
+  },
+  "created_at": "2026-04-29T10:43:13.982698",
+  "inputs": {
+    "board_id": "esp32_wroom32d_cp210x",
+    "instrument_id": null,
+    "probe_id": null,
+    "test_id": "blinky_1hz"
+  },
+  "plan_id": "2026-04-29_10-43-13_esp32_wroom32d_cp210x_blinky_1hz",
+  "preflight": {
+    "checks": [
+      {
+        "args": {},
+        "type": "probe.health"
+      }
+    ],
+    "policy": {
+      "fail_fast": true
+    }
+  },
+  "recovery_policy": {
+    "allowed_actions": [
+      "reset.serial",
+      "probe.soft.reset"
+    ],
+    "enabled": true,
+    "retries": {
+      "build": 1,
+      "check": 2,
+      "run": 2
+    }
+  },
+  "report": {
+    "emit": [
+      "*.log",
+      "*.json",
+      "artifacts/*"
+    ]
+  },
+  "selected": {
+    "board_config": "/home/raymond/ael/configs/boards/esp32_wroom32d_cp210x.yaml",
+    "probe_config": "",
+    "test_config": "/home/raymond/ael/tests/plans/esp32_wroom32d/blinky_1hz.json"
+  },
+  "stage_execution": {
+    "deferred": [],
+    "executed": [
+      "plan",
+      "run",
+      "check",
+      "report"
+    ],
+    "requested_until": "report",
+    "skipped": [
+      "pre-flight"
+    ]
+  },
+  "stages": [
+    "plan",
+    "pre-flight",
+    "run",
+    "check",
+    "report"
+  ],
+  "steps": [
+    {
+      "inputs": {
+        "board_cfg": {
+          "build": {
+            "artifact_stem": "ael_esp32_wroom32d_blinky_1hz",
+            "build_dir": "artifacts/build_esp32_wroom32d_blinky_1hz",
+            "project_dir": "firmware/targets/esp32_wroom32d/blinky_1hz",
+            "type": "idf"
+          },
+          "default_wiring": {
+            "reset": "NC",
+            "swd": "NC",
+            "verify": "NC"
+          },
+          "features": [
+            "programmable_via_uart",
+            "has_uart_console",
+            "has_gpio"
+          ],
+          "flash": {
+            "baud": 460800,
+            "method": "idf_esptool",
+            "port": "/dev/ttyUSB0",
+            "serial": null,
+            "target": "esp32"
+          },
+          "kind": "board",
+          "name": "ESP32-WROOM-32D CP210X",
+          "pins": {
+            "safe_output": [
+              "GPIO4",
+              "GPIO13",
+              "GPIO14",
+              "GPIO16",
+              "GPIO17",
+              "GPIO18",
+              "GPIO19",
+              "GPIO21",
+              "GPIO22",
+              "GPIO23",
+              "GPIO25",
+              "GPIO26",
+              "GPIO27",
+              "GPIO32",
+              "GPIO33"
+            ],
+            "strap_or_reserved": [
+              "GPIO0",
+              "GPIO1",
+              "GPIO2",
+              "GPIO3",
+              "GPIO5",
+              "GPIO6",
+              "GPIO7",
+              "GPIO8",
+              "GPIO9",
+              "GPIO10",
+              "GPIO11",
+              "GPIO12",
+              "GPIO15"
+            ]
+          },
+          "power_and_boot": {
+            "boot_mode_default": "normal",
+            "power_rails": [
+              {
+                "name": "VCC",
+                "nominal_v": 3.3
+              }
+            ],
+            "reset_strategy": "none"
+          },
+          "probe_required": false,
+          "processors": [
+            {
+              "arch": "xtensa",
+              "clock_hz": 240000000,
+              "id": "esp32",
+              "role": "primary"
+            }
+          ],
+          "target": "esp32",
+          "usb_interface_type": "bridge_only"
+        },
+        "log_path": "/home/raymond/ael/runs/2026-04-29_10-43-13_esp32_wroom32d_cp210x_blinky_1hz/build.log",
+        "output_mode": "normal"
+      },
+      "name": "build",
+      "type": "build.idf"
+    },
+    {
+      "inputs": {
+        "firmware_path": null,
+        "flash_cfg": {
+          "baud": 460800,
+          "build_dir": "/home/raymond/ael/artifacts/build_esp32_wroom32d_blinky_1hz",
+          "flash_log_path": "/home/raymond/ael/runs/2026-04-29_10-43-13_esp32_wroom32d_cp210x_blinky_1hz/flash.log",
+          "method": "idf_esptool",
+          "port": "/dev/ttyUSB0",
+          "project_dir": "firmware/targets/esp32_wroom32d/blinky_1hz",
+          "reset_available": false,
+          "serial": null,
+          "target": "esp32"
+        },
+        "flash_json_path": "/home/raymond/ael/runs/2026-04-29_10-43-13_esp32_wroom32d_cp210x_blinky_1hz/flash.json",
+        "log_path": "/home/raymond/ael/runs/2026-04-29_10-43-13_esp32_wroom32d_cp210x_blinky_1hz/flash.log",
+        "output_mode": "normal",
+        "probe_cfg": {
+          "gdb_cmd": null,
+          "name": null
+        }
+      },
+      "name": "load",
+      "type": "load.idf_esptool"
+    },
+    {
+      "inputs": {
+        "flash_json_path": "/home/raymond/ael/runs/2026-04-29_10-43-13_esp32_wroom32d_cp210x_blinky_1hz/flash.json",
+        "log_path": "/home/raymond/ael/runs/2026-04-29_10-43-13_esp32_wroom32d_cp210x_blinky_1hz/observe_uart_step.log",
+        "observe_uart_cfg": {
+          "auto_reset_on_download": true,
+          "baud": 115200,
+          "duration_s": 20,
+          "enabled": true,
+          "expect_patterns": [
+            "AEL_BLINKY_DONE"
+          ],
+          "port": "/dev/ttyUSB0",
+          "profile": "espidf",
+          "reset_strategy": "rts"
+        },
+        "out_json": "/home/raymond/ael/runs/2026-04-29_10-43-13_esp32_wroom32d_cp210x_blinky_1hz/uart_observe.json",
+        "output_mode": "normal",
+        "raw_log_path": "/home/raymond/ael/runs/2026-04-29_10-43-13_esp32_wroom32d_cp210x_blinky_1hz/observe_uart.log"
+      },
+      "name": "check_uart",
+      "type": "check.uart_log"
+    },
+    {
+      "inputs": {
+        "note": "no signal checks \u2014 skipped (mailbox-only test)"
+      },
+      "name": "check_signal",
+      "type": "check.noop"
+    }
+  ],
+  "version": "runplan/0.1"
+}

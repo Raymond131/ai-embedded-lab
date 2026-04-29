@@ -1,0 +1,9 @@
+{
+  "name": "esp32_wroom32d_blinky_1hz",
+  "board": "esp32_wroom32d_cp210x",
+  "notes": "Personal portfolio project: 1 Hz LED blink on GPIO2 (onboard LED). Stage 0 bare-board test, no jumpers required. Demonstrates the AEL closed-loop workflow end-to-end: build -> flash -> observe UART -> PASS/FAIL.",
+  "preflight": {"enabled": false},
+  "tests": [
+    "tests/plans/esp32_wroom32d/blinky_1hz.json"
+  ]
+}

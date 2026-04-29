@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "name": "esp32_wroom32d_blinky_1hz",
+  "test_kind": "instrument_specific",
+  "board": "esp32_wroom32d_cp210x",
+  "supported_instruments": [],
+  "requires": {
+    "mailbox": false,
+    "datacapture": false
+  },
+  "labels": [
+    "stage0",
+    "bringup",
+    "truth_layer"
+  ],
+  "covers": [
+    "gpio",
+    "console"
+  ],
+  "notes": "1 Hz LED blink on GPIO2 (onboard LED, ESP32-WROOM-32D). No jumpers required. Verifies flash, boot, GPIO output, and UART0 console via CP210X.",
+  "wiring": {
+    "required": []
+  },
+  "build": {
+    "project_dir": "firmware/targets/esp32_wroom32d/blinky_1hz",
+    "artifact_stem": "ael_esp32_wroom32d_blinky_1hz",
+    "build_dir": "artifacts/build_esp32_wroom32d_blinky_1hz"
+  },
+  "preflight": {
+    "enabled": false
+  },
+  "observe_uart": {
+    "enabled": true,
+    "port": "/dev/ttyUSB0",
+    "baud": 115200,
+    "profile": "espidf",
+    "duration_s": 20,
+    "reset_strategy": "rts",
+    "expect_patterns": [
+      "AEL_BLINKY_DONE"
+    ]
+  }
+}
